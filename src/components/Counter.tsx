@@ -4,7 +4,7 @@ export const Counter = () => {
 
     const [ count, setCount ] = useState(10);
 
-    const increaseBy = (value: number) => setCount(count + value);
+    const increaseBy = (value: number) => setCount(prevCount => prevCount + value);
 
     return (
         <>
