@@ -27,7 +27,11 @@ export const LoginPage = () => {
             {authStatus === 'authenticated'
                 ? <div>
                     <pre>
-                        Authenticated as: {JSON.stringify(user, null, 2)}
+                        Authenticated as: {JSON.stringify({
+                            email: user?.email,
+                            name: user?.name,
+                            id: user?.id
+                        }, null, 2)}
                     </pre>
                 </div>
                 : <div>
