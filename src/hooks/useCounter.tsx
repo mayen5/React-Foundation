@@ -15,7 +15,7 @@ export const useCounter = ({ initialValue = 10 }: Options) => {
         });
     };
     const reset = () => {
-        setCount(0)
+        setCount(initialValue)
     };
 
     return {
