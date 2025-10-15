@@ -7,7 +7,6 @@ interface AuthState {
         id: string;
         name: string;
         email: string;
-        password: string;
     };
 
     login: (email: string, password: string) => void;
@@ -28,8 +27,7 @@ export const useAuthStore = create<AuthState>((set) => ({
                 user: {
                     id: '1',
                     name: 'John Doe',
-                    email: email,
-                    password: password
+                    email: email
                 }
             });
         }, 1000);
