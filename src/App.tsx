@@ -1,6 +1,7 @@
 import {
   // BasicTypes,
-  ObjectLiterals
+  // ObjectLiterals,
+  BasicFunctions
 } from './typescript';
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <h1>Introducción a React</h1>
 
       {/* <BasicTypes /> */}
-      <ObjectLiterals />
+      {/* <ObjectLiterals /> */}
+      <BasicFunctions />
     </main>
   )
 }
