@@ -23,7 +23,7 @@ export const FormsPage = () => {
             <h2>Forms Page</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <input type="text" placeholder='Email' {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })} />
+                    <input type="email" placeholder='Email' {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })} />
                     <input type="password" placeholder='Password' {...register('password')} />
                 </div>
                 <div>
