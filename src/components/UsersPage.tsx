@@ -41,7 +41,7 @@ export const UsersPage = () => {
     }
 
     const prevPage = async () => {
-        if (currentPageRef.current < 1) return;
+        if (currentPageRef.current <= 1) return;
         currentPageRef.current--;
         const users = await loadUsers(currentPageRef.current);
         if (users.length > 0) {
