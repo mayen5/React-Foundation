@@ -7,7 +7,7 @@ const loadUsers = async (page: number = 1): Promise<User[]> => {
 
     try {
         const { data } = await axios.get<ReqUserListResponse>('https://reqres.in/api/users', {
-            params: { page: page, per_page: 5 },
+            params: { page: page },
             headers: { "x-api-key": "reqres-free-v1" }
         });
         return data.data;
