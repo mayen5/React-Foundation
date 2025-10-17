@@ -27,7 +27,7 @@ export const FormsPage = () => {
                     <input type="text" placeholder='Password' {...register('password')} />
                 </div>
                 <div>
-                    <button type="submit" {...handleSubmit(onSubmit)}>Submit</button>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
 
