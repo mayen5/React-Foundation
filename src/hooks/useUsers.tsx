@@ -12,7 +12,7 @@ const loadUsers = async (page: number = 1): Promise<User[]> => {
         });
         return data.data;
     } catch (error) {
-        console.log(error);
+        console.error(`Failed to load users for page ${page}:`, error);
         return [];
     }
 }
