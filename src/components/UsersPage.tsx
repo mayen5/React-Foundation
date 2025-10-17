@@ -1,5 +1,5 @@
+import { UsersRow } from '.';
 import { useUsers } from '../hooks';
-import { UsersRow } from './UserRox';
 
 export const UsersPage = () => {
 
