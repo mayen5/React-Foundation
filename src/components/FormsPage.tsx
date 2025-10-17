@@ -24,7 +24,7 @@ export const FormsPage = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <input type="text" placeholder='Email' {...register('email', { required: true, pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ })} />
-                    <input type="text" placeholder='Password' {...register('password')} />
+                    <input type="password" placeholder='Password' {...register('password')} />
                 </div>
                 <div>
                     <button type="submit">Submit</button>
